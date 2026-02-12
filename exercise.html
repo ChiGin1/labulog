@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>运动跟练</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="flex items-center justify-center bg-[#f7efe8] py-8">
+    <div class="app-frame">
+      <div class="app-screen flex flex-col">
+        <div class="nav-bar flex items-center justify-between px-6 py-4 text-white">
+          <div class="flex items-center gap-3">
+            <span class="rounded-full bg-white/30 px-2 py-1">
+              <i class="fa-solid fa-arrow-left"></i>
+            </span>
+            <h2 class="text-lg font-semibold">运动跟练</h2>
+          </div>
+        </div>
+        <div class="flex-1 px-6 py-5 space-y-5">
+          <div class="flex gap-3">
+            <button class="tab-pill active">肠道蠕动操</button>
+            <button class="tab-pill">肛周放松运动</button>
+          </div>
+          <div class="rounded-card bg-white p-3 shadow-soft">
+            <div class="relative overflow-hidden rounded-card">
+              <img
+                src="https://images.unsplash.com/photo-1517832207067-4db24a2ae47c?auto=format&fit=crop&w=800&q=80"
+                alt="exercise"
+                class="h-44 w-full object-cover"
+              />
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="h-16 w-16 rounded-full bg-white/80 flex items-center justify-center">
+                  <i class="fa-solid fa-play text-[#ff9f43] text-xl"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4">
+              <div class="progress-track">
+                <div class="progress-thumb"></div>
+              </div>
+              <div class="mt-2 flex justify-between text-xs text-secondary">
+                <span>02:10</span>
+                <span>08:30</span>
+              </div>
+            </div>
+          </div>
+          <button class="btn-primary rounded-pill py-3 text-base font-semibold w-full">
+            标记已完成
+          </button>
+          <div class="rounded-card bg-white p-4 shadow-soft">
+            <p class="text-sm font-semibold text-contrast">今日课程提醒</p>
+            <p class="mt-2 text-sm text-secondary">训练后记得补水，保持温暖。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>设置</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="flex items-center justify-center bg-[#f7efe8] py-8">
+    <div class="app-frame">
+      <div class="app-screen flex flex-col">
+        <div class="nav-bar flex items-center justify-between px-6 py-4 text-white">
+          <div class="flex items-center gap-3">
+            <span class="rounded-full bg-white/30 px-2 py-1">
+              <i class="fa-solid fa-arrow-left"></i>
+            </span>
+            <h2 class="text-lg font-semibold">设置</h2>
+          </div>
+        </div>
+        <div class="flex-1 px-6 py-5 space-y-4">
+          <div class="rounded-card bg-white p-4 shadow-soft space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-sm font-semibold">深色模式</span>
+              <div class="toggle-track on">
+                <span class="toggle-knob"></span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-sm font-semibold">排便提醒</span>
+              <div class="toggle-track">
+                <span class="toggle-knob"></span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-sm font-semibold">数据同步</span>
+              <div class="toggle-track on">
+                <span class="toggle-knob"></span>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-card bg-white p-4 shadow-soft space-y-4">
+            <div class="flex items-center justify-between text-sm">
+              <span class="font-semibold">排便提醒时间</span>
+              <span class="text-secondary">08:00 / 20:00</span>
+            </div>
+            <div class="flex items-center justify-between text-sm">
+              <span class="font-semibold">缓存管理</span>
+              <span class="text-secondary flex items-center gap-2">200MB <i class="fa-solid fa-chevron-right text-xs"></i></span>
+            </div>
+            <div class="flex items-center justify-between text-sm">
+              <span class="font-semibold">关于我们</span>
+              <span class="text-secondary flex items-center gap-2">V1.0.0 <i class="fa-solid fa-chevron-right text-xs"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首页</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="flex items-center justify-center bg-[#f7efe8] py-8">
+    <div class="app-frame">
+      <div class="app-screen flex flex-col">
+        <div class="nav-bar flex items-center justify-between px-6 py-4 text-white">
+          <div class="flex items-center gap-3">
+            <img
+              src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&w=80&q=80"
+              alt="logo"
+              class="h-10 w-10 rounded-full object-cover border-2 border-white"
+            />
+            <span class="text-lg font-semibold">拉不拉多</span>
+          </div>
+          <button class="flex items-center gap-2 rounded-pill bg-white/25 px-4 py-2 text-sm">
+            <i class="fa-solid fa-chart-pie"></i>
+            今日统计
+          </button>
+        </div>
+        <div class="px-6 py-4 flex-1 overflow-y-auto">
+          <div class="flex items-center justify-between text-sm text-contrast">
+            <span class="font-semibold">2025年04月15日 星期二</span>
+            <span class="chip rounded-pill px-3 py-1 text-xs text-contrast">今日已打卡1次</span>
+          </div>
+          <div class="mt-4 rounded-card card-surface p-4 shadow-soft">
+            <div class="grid grid-cols-2 gap-3">
+              <button class="btn-primary rounded-pill py-3 text-sm font-semibold">🚽 已便便完</button>
+              <button class="btn-secondary rounded-pill py-3 text-sm font-semibold">⏳ 正在便便</button>
+            </div>
+          </div>
+          <div class="mt-4 rounded-card bg-white p-4 shadow-soft">
+            <h3 class="text-base font-semibold text-contrast">番茄钟</h3>
+            <div class="mt-3 flex flex-col items-center gap-3">
+              <div class="h-40 w-40 rounded-full border-[10px] border-[#ff9f43] flex items-center justify-center">
+                <div class="text-center">
+                  <p class="text-3xl font-semibold text-contrast">09:32</p>
+                  <p class="text-xs text-secondary">剩余时间</p>
+                </div>
+              </div>
+              <div class="flex gap-3">
+                <button class="rounded-pill border-2 border-[#e0c8b5] px-5 py-2 text-sm text-secondary">
+                  暂停
+                </button>
+                <button class="btn-primary rounded-pill px-5 py-2 text-sm">完成排便</button>
+              </div>
+            </div>
+          </div>
+          <div class="mt-5">
+            <div class="flex items-center justify-between">
+              <h3 class="text-base font-semibold text-contrast">今日记录</h3>
+              <span class="text-xs text-secondary">共3条</span>
+            </div>
+            <div class="mt-3 space-y-3">
+              <div class="rounded-card bg-[#fff4cc] p-3">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <p class="text-sm font-semibold">08:40</p>
+                    <p class="text-xs text-secondary">成形软便 · 坐便</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-xl">🚽</span>
+                    <span class="text-xl">💩</span>
+                  </div>
+                </div>
+              </div>
+              <div class="rounded-card bg-[#fff4cc] p-3">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <p class="text-sm font-semibold">12:05</p>
+                    <p class="text-xs text-secondary">偏稀 · 蹲便</p>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <span class="text-xl">🧻</span>
+                    <span class="text-xl">💩</span>
+                    <span class="text-xl">💩</span>
+                  </div>
+                </div>
+              </div>
+              <div class="rounded-card bg-[#fff4cc] p-3">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <p class="text-sm font-semibold">19:20</p>
+                    <p class="text-xs text-secondary">正常 · 坐便</p>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <span class="text-xl">🚽</span>
+                    <span class="text-xl">💩</span>
+                    <span class="text-xl">💩</span>
+                    <span class="text-xl">💩</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-nav px-8 py-3">
+          <div class="flex items-center justify-between text-xs font-semibold">
+            <div class="bottom-nav-item active flex flex-col items-center gap-1">
+              <i class="fa-solid fa-house text-base"></i>
+              首页
+            </div>
+            <div class="bottom-nav-item flex flex-col items-center gap-1">
+              <i class="fa-solid fa-chart-column text-base"></i>
+              数据统计
+            </div>
+            <div class="bottom-nav-item flex flex-col items-center gap-1">
+              <i class="fa-solid fa-user text-base"></i>
+              我的
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
